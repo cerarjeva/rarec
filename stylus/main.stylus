@@ -1,0 +1,657 @@
+body
+  margin: 0
+  padding: 0
+  background: #0D0C0C
+  color: white
+  font-size: 16px
+  font-family: Roboto, system-ui, sans-serif
+  -webkit-font-smoothing: antialiased
+  transition: all .3s
+
+a
+  text-decoration: none
+  color: white
+  transition: all .3s
+  opacity: 1
+  font-size: 14px
+  &:hover
+    opacity: .8
+    cursor: pointer
+    transform: translateX(-2px)
+
+h1
+  font-size: 56px
+  font-weight: 600
+  margin: 0px
+
+h2
+  font-size: 40px
+  font-weight: 600
+
+h3
+  font-size: 24px
+  font-weight: 500
+
+p
+  font-size: 16px
+  font-weight: 400
+  line-height: 20px
+
+li
+  list-style none
+
+.active
+  opacity 1 !important
+  color white
+
+ .navigation
+   display: flex
+   justify-content: space-between
+   padding: 32px 48px
+   align-items: center
+   height: 56px
+
+ .logo
+    height: 32px
+
+section
+  min-height 100vh
+
+.menu
+  a
+    font-size: 14px
+    margin-left: 24px
+    letter-spacing: 1.6px
+    transition: all .3s
+    opacity: .5
+    &:hover
+      opacity: 1
+      transform: translateX(2px)
+
+
+.hero
+  display: flex
+  justify-content: flex-end
+
+
+.hero-text
+  margin-top: 160px
+  max-width: 200px
+  border-left: 1px solid #444
+  border-bottom: 1px solid #444
+  border-top: 1px solid #444
+  padding: 32px
+  max-height: 280px
+  h1
+    font-size: 88px
+    font-weight: 500
+    margin 0px !important
+  p
+    max-width: 128px
+    font-size: 16px
+    line-height: 24px
+    margin-bottom: 32px
+  a
+    margin-top: 40px
+    font-size: 14px
+    font-weight: 300
+
+.hero-bg
+  height: 600px
+  width: 1024px
+  background: #222
+  display: flex
+  justify-content: center
+  align-items: center
+  &:after
+    content: ''
+    height: 100%
+    width: 100%
+    background: url('../media/metal-bg.png')
+    background-size: cover
+    background-repeat: none
+    opacity: .4
+    transform: rotate(180deg)
+
+.control-wrapper
+  display: flex
+  height: 320px
+  width: 900px
+  background: rgba(0,0,0,.5)
+  z-index: 2
+  align-items: center
+  padding: 32px
+  position: absolute
+
+.hero-image
+  height: 500px
+  width: 768px
+  background: #555
+  position: absolute
+  z-index: 3
+
+.controls
+  display: flex
+  width: 100%
+  justify-content: space-between
+  > *
+    height: 40px
+    width: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: .6
+    transition: all .3s
+    cursor: pointer
+    &:hover
+      opacity: 1
+      cursor: pointer
+  .control_prev
+    background: url('../media/chev-l.svg')
+    background-repeat: no-repeat
+    background-position: center
+    border-left: 1px solid white
+    &:hover
+      width 32px
+  .control_next
+    background: url('../media/chev-r.svg')
+    background-repeat: no-repeat
+    background-position: center
+    border-right: 1px solid white
+    &:hover
+      width 32px
+
+
+#slider
+  position: absolute;
+  overflow: hidden;
+  height: 500px !important;
+  width: 768px !important;
+
+
+#slider ul
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+#slider ul li
+  position: relative;
+  display: block;
+  float: left;
+  height: 500px;
+  width: 768px;
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  text-align: center;
+  background-size:cover;
+
+
+li
+  background-size: cover
+  background-repeat: no-repeat
+
+
+
+.homepage-two
+  height: 100vh
+  display: flex
+  justify-content: flex-start
+  align-items: center
+
+.two-image
+  height: 500px
+  width: 770px
+  background-size: cover
+  background-repeat: no-repeat
+  margin-right: 64px
+  background-image: url('../media/home-two.png');
+
+.two-text
+  max-width: 200px
+  z-index: 99
+  &:before
+    content: ''
+    position absolute
+    margin-left: -65px
+    margin-top: 40px
+    height: 300px
+    width: 384px
+    border-style: solid
+    border-width: 1px 1px 1px 0px
+    border-color: #444
+    z-index: -1
+
+
+
+
+.homepage-three
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-bottom: 80px
+
+.three-image
+  height: 500px
+  width: 1120px
+  margin-bottom: 40px
+  background-image: url('../media/home-three.png');
+  background-size: cover
+  background-repeat: no-repeat
+
+.three-text
+  max-width: 640px
+  z-index: 99
+  &:before
+    content: ''
+    position absolute
+    margin-left: -64px
+    margin-top: 40px
+    height: 160px
+    width: 610px
+    border: 1px solid #444
+    z-index: -1
+
+
+.homepage-four
+  height: 100vh
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+
+.four-image-left
+  height: 580px
+  width: 282px
+  margin-right: 40px
+  background-image: url('../media/four-l.png');
+  background-size: cover
+  background-repeat: no-repeat
+
+.four-image-right
+  height: 500px
+  width: 100%
+  min-width: 700px
+  background-image: url('../media/four-r.png');
+  background-size: cover
+  background-repeat: no-repeat
+
+.four-text
+  max-width: 276px
+  z-index: 99
+  margin-right: 64px
+  margin-top: -230px
+  &:before
+    content: ''
+    position absolute
+    margin-left: -24px
+    margin-top: 40px
+    height: 320px
+    width: 248px
+    border: 1px solid #444
+    z-index: -1
+
+
+
+.homepage-five
+  height: 130vh
+  align-items: center
+  justify-content: center
+
+.clients-wrapper
+  max-width: 1024px
+  margin: 0 auto
+  .title
+    margin-bottom: 128px
+    &:after
+      content: ''
+      position: absolute
+      width: 240px
+      height: 1px
+      background: #444
+      margin-top: -16px
+      margin-left: 16px
+
+.client-grid
+  display: flex
+  .col
+    display: flex
+    flex: 1
+    flex-direction: column
+    margin-right: 16px
+  .client
+    width: 240px
+    height: 160px
+    border: 1px solid #111
+    margin-bottom: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: all .8s
+    img
+      transform: scale(.4)
+      opacity: .4
+      transition: all .8s
+    &:hover
+      border 1px solid #666
+      img
+        opacity: 1
+        transform: scale(.45)
+
+
+
+.footer
+  height: 300px
+  display: flex
+  background: #111
+
+  .copyright
+    width: 64px
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    p
+      transform: rotate(-90deg)
+      position: absolute
+      font-size: 13px
+      color: #888
+      margin-top: 88px
+  .address
+    width: 320px
+    margin-top: 40px
+    margin-left: 64px
+    div
+      margin-bottom: 24px
+    p
+      color: #888 + 30
+      font-size: 13px
+      line-height: 20px
+      margin: 0px
+  .footer-nav
+    width: 100%
+    .nav
+      width: 100%
+      display: flex
+      justify-content: center
+      margin-top: 40px
+      a
+        margin-right: 32px
+        color: #888
+        transition: all .3s
+        &:hover
+          color: #fff
+
+
+//////////??/////////???//////////???//////////???
+//////////??/////////???//////////???//////////???
+//////////??/////////???//////////???//////////???
+//////////??/////////???//////////???//////////???
+//////////??/////////???//////////???//////////???
+// PRODUCTS //////////////////////////////////////
+
+.centered-wrapper
+  max-width: 1024px
+  margin: 0 auto
+
+.page-header
+  margin-top: 64px
+  h1
+    font-weight: 500
+
+.product-one
+.product-two
+.product-three
+.product-four
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.product-one
+  margin-top -100px
+
+.product-content
+  max-width: 720px
+  margin-bottom: 32px
+  p
+    font-size: 16px
+    line-height: 24px
+    font-weight: 300
+    &:nth-last-child(2)
+      margin-bottom 56px
+  a
+    font-size: 16px
+    font-weight: 500
+    margin-top 32px
+
+.product-background
+  width: 800px
+  height: 480px
+  // background: gray
+  position: absolute
+  right: 0
+  // margin-left: 224px
+  z-index: -1
+
+
+.pr1
+  background-image: url('../media/p1.png')
+  background-size: cover
+  background-repeat: none
+
+
+.pr2
+  background-image: url('../media/p2.png')
+  background-size: cover
+  background-repeat: none
+
+
+.pr3
+  background-image: url('../media/p3.png')
+  background-size: cover
+  background-repeat: none
+
+
+.pr4
+  background-image: url('../media/p4.png')
+  background-size: cover
+  background-repeat: none
+
+
+
+  //////////??/////////???//////////???//////////???
+  //////////??/////////???//////////???//////////???
+  //////////??/////////???//////////???//////////???
+  //////////??/////////???//////////???//////////???
+  //////////??/////////???//////////???//////////???
+  // Contact ///////////////////////////////////////
+
+// .centered-wrapper
+//   max-width: 1024px
+//   margin: 0 auto
+//
+// .page-header
+//   margin-top: 64px
+//   h1
+//     font-weight: 500
+//
+// .product-one
+// .product-two
+// .product-three
+// .product-four
+//   display: flex
+//   align-items: center
+//   justify-content: flex-start
+//
+// .product-content
+//   max-width: 720px
+//   margin-bottom: 32px
+//   p
+//     font-size: 16px
+//     line-height: 24px
+//     font-weight: 300
+//   a
+//     font-size: 16px
+//     font-weight: 500
+//   // &:before
+//   //   content: ''
+//   //   position: absolute
+//   //   height: 420px
+//   //   width: 48vw
+//   //   left: 0
+//   //   border-style: solid
+//   //   border-width: 1px 1px 1px 0px
+//   //   border-color: #444
+//   //   margin-top: -48px
+//   //   z-index: -1
+//
+// .product-background
+//   width: 800px
+//   height: 480px
+//   // background: gray
+//   position: absolute
+//   right: 0
+//   // margin-left: 224px
+//   z-index: -1
+//
+//
+// .pr1
+//   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/Skadiscni%20sotor%20brez%20ozadja%20Copy.png)
+//   background-size: cover
+//   background-repeat: none
+//
+//
+// .pr2
+//   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/kmetijsko%20brez%20sena.png)
+//   background-size: cover
+//   background-repeat: none
+//
+//
+// .pr3
+//   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/nadstresek%20brez%20ozadja.png)
+//   background-size: cover
+//   background-repeat: none
+//
+//
+// .pr4
+//   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/Group%207.png)
+//   background-size: cover
+//   background-repeat: none
+
+
+ ///////////////////////
+  ///////////////////////
+  ///////////////////////
+  ///////////////////////
+  ///////////////////////
+  ///////////////////////
+ ///////////////////////
+
+
+.about-us
+ margin-top: 40px
+ max-width: 800px
+ p
+   line-height: 24px
+   font-weight: 300
+
+.photo-bg
+  background-image: url('../media/contact-bg.png')
+  background-size: cover
+  background-repeat: no-repeat
+  height: 600px
+  width: 100vw
+  left: 0
+  top: 0
+  z-index: -1 !important
+  position: absolute
+  opacity: .7
+
+
+ .flex
+  display flex
+  margin-top: 40px
+  margin-bottom: 80px
+
+.contact-address
+  h3
+    font-weight: 300
+    margin-bottom: 24px
+  .address
+    margin-top: 56px
+    div
+      margin-bottom: 32px
+      p
+        font-size: 14px
+        margin: 0px
+        padding: 0px
+        color: #666
+.contact
+  margin-top: 200px
+
+.message-form
+  margin-right: 88px
+  h3
+    font-weight: 300
+    margin-bottom: 24px
+
+label
+  font-size: 14px
+  line-height: 20px
+  color: #666
+  margin-bottom: 4px
+
+input[type=text]
+input[type=email]
+  width: 278px
+  margin-right: 32px
+  height: 32px
+  background: transparent
+  border-width: 0px 0px 1px 0px
+  border-color: #666
+  color: white
+  font-size: 14px
+  padding-left: 8px
+  outline: none
+  &:focus
+    border-color: white
+
+textarea
+  background: transparent
+  border 1px solid #666
+  color: white
+  font-size: 14px
+  padding: 16px
+  outline: none
+  &:focus
+    border-color: white
+
+#form
+  margin-top: 40px
+
+#form
+.form-element
+  max-width: 600px
+  display: flex
+  flex-direction: column
+  margin-bottom: 32px
+  .column
+    display: flex
+
+
+#submit-btn
+  margin-top: 32px
+  height: 40px
+  width: 127px
+  border: none
+  border-radius: 0px
+  font-size: 14px
+  color: white
+  background: #444
+  transition: all .3s
+  &:hover
+    background: #222
+    cursor: pointer
