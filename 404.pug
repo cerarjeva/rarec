@@ -1,0 +1,50 @@
+html
+  head
+    title="Domov"
+    
+    link(rel="stylesheet" href="./stylus/main.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700")
+      
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+      
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
+    script(src="./js/main.js") 
+  body
+    .navigation 
+      .logo-wrapper
+        a(href="./index.html")
+          img( class="logo" src="media/logo.svg", alt="Rarec Inc")
+      .menu
+        a(href="./index.html" class="active")="DOMOV"
+        a(href="./products.html")="PRODUKTI"
+        a(href="./contact.html")="KONTAKT"
+        
+    .empty-state
+      .empty-wrapper
+        h2="Page not found :(" 
+        a( style="text-decoration:underline;" href="./index.html")="Click here to go to home page"   
+
+    .footer
+      .copyright
+        p="© 2018 Rarec Inc"
+      .address
+        .location
+          p="RAREC IN d.o.o. PC Žeje pri Komendi"
+          p="Pod bori 2"
+          p="1218 Komenda"
+        .number
+          p="Telefon : +386 1 51 50 250"
+          p="Fax:        +386 1 51 50 251"
+        .email
+          p="E-mail:  info@rarec.si"
+        .gsm  
+          p="GSM : 051 631 093"
+      .footer-nav
+        .nav
+          a(href="./index.html" class="active")="DOMOV"
+          a(href="./products.html")="PRODUKTI"
+          a(href="./contact.html")="KONTAKT"
+            
+ 

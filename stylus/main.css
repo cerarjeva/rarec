@@ -577,3 +577,20 @@ textarea:focus {
   background: #222;
   cursor: pointer;
 }
+.empty-state {
+  height: 56vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.empty-state l,
+.empty-state .empty-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.empty-state l a,
+.empty-state .empty-wrapper a {
+  font-size: 16px;
+}
