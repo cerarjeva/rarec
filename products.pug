@@ -1,67 +1,31 @@
 html
   head
-    title="Produkti"
+    title="Domov"
     
-    link(rel="stylesheet" href="stylus/main.css")
+    link(rel="stylesheet" href="./stylus/main.css")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700")
-
+      
     meta(name="viewport" content="width=device-width, initial-scale=1")
       
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
     script(src="./js/main.js") 
   body
-    .navigation
+    .navigation 
       .logo-wrapper
         a(href="./index.html")
           img( class="logo" src="media/logo.svg", alt="Rarec Inc")
       .menu
-        a(href="./index.html")="DOMOV"
-        a(href="./products.html" class="active")="PRODUKTI"
+        a(href="./index.html" class="active")="DOMOV"
+        a(href="./products.html")="PRODUKTI"
         a(href="./contact.html")="KONTAKT"
         
-    .centered-wrapper 
-     
-      .page-header
-        h1="Produkti"
-
-      section.product-one
-        .product-content
-          h2="Industijski šotori"
-          p="Šotori so izdelani iz odporne konstrukcij  iz aluminijastih profilov in vroče cinkanih jeklenih veznih členov. Stranska pokrivala so prilagodljivih dimenzij in se lahko spremenijo glede na namembnost uporabe."
-          p="Strešna in stranska kritina je lahko izvedena iz PVC negorljivega platna, trapezne pločevine ali ISO izolacijskih panelov, po želji naročnika se lahko vgradijo industrijska in osebna vrata različnih dimenzij in izvedb. Šotori so primerni  za proizvodne, prodajne, skladiščne, sejemske, kombinirane proizvodno - poslovne objekte ter tudi za rekreativno-vadbene namene. Gradbeno dovoljenje ni potrebno."
-          a(href="./contact.html#focus")="pošlji povpraševanje →"
-        .product-background.pr1
-
-
-
-      section.product-two
-        .product-content
-          h2="Kmetijski šotori"
-          p="Kmetijski šotori so izdelani iz pocinkane jeklene konstrukcije in prekriti s kakovostno pvc ponjavo."
-          p="Streha je prekrita s svetlobo prepustno ponjavo.  Barvo ponjave lahko prilagodimo v okviru barvne palete proizvajalca, nanjo pa je mogoče natisniti tudi napis oziroma sliko po vašem izboru. Ponjava je odporna na točo in težkogorljiva. Betoniranje temeljev ni potrebno"
-          p="Standardni razponi so od 8 do 15 m, dimenzije pa lahko prilagodimo vašim potrebam. Življenska doba je preko 15 let. Za kmetijske šotore ne potrebujete gradbenega dovoljenja."
-          a(href="./contact.html#focus")="pošlji povpraševanje →"
-        .product-background.pr2
-
-
-      section.product-three
-        .product-content
-          h2="Nadstreški"
-          p="Praktični in oblikovani po najsodobnješih  arkitekturnih smernicah. Ščitijo pred neugodnim vremenom in so 100% odporni na točo. Za zaščito osebnih in gospodarskih vozil, industrijske mehanizecije ter gradbenega materiala. Izdelani iz  iz aluminija, vroče potopno cinkanih veznih železnih elementov, pokrivala iz visokokovostne PVC ponjave, trapezne pločevine ali izolacijskih panelnih plošč."
-          a(href="./contact.htm#focus")="pošlji povpraševanje →"
-        .product-background.pr3
-
-
-      section.product-four
-        .product-content
-          h2="Nadstreški"
-          p="Naši strokovnjaki vam po naročilu izdelajo manjše montažne konstrukcije kot sonadstrešnice, podesti, ograje, drsna vrata, nadstrešnice za smeti in popravila kovinskih izdelkov"
-          p="Za bolj podrobne informacije nas pokličite ali nam pošljite povpraševanje."
-          a(href="./contact.html#focus")="pošlji povpraševanje →"
-        .product-background.pr4
-
+    .empty-state
+      .empty-wrapper
+        h2="Thank you for the message"
+        p="We will reach you back" 
+        a( style="text-decoration:underline;" href="./index.html")="Click here to go to home page"   
 
     .footer
       .copyright
@@ -80,6 +44,8 @@ html
           p="GSM : 051 631 093"
       .footer-nav
         .nav
-          a(href="./index.html")="DOMOV"
-          a(href="./products.html" class="active")="PRODUKTI"
+          a(href="./index.html" class="active")="DOMOV"
+          a(href="./products.html")="PRODUKTI"
           a(href="./contact.html")="KONTAKT"
+            
+ 
