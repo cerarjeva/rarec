@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title="Nadstreški"
+    
+    link(rel="stylesheet" href="stylus/main.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700")
+
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+      
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
+    script(src="./js/main.js") 
+  body
+    .navigation
+      .logo-wrapper
+        a(href="./index.html")
+          img( class="logo" src="media/logo.svg", alt="Rarec Inc")
+      .menu
+        a(href="./index.html")="DOMOV"
+        .dropdown-wrapper
+          a(href="#" class="active")="PRODUKTI"
+            .dropdown
+              .dropdown-list
+                a(href="./industrijski-sotori.html")="Industrijski sotori"
+                a(href="./kmetijski-šotori.html")="Kmetijski sotori"
+                a(href="./nadstreški.html")="Nadsteski"
+                a(href="./konstrukcije-po-meri.html")="Konstrukcije po meri"
+        a(href="./contact.html")="KONTAKT"
+        a(href="./reference.html")="REFERENCE"
+        a(href="./o-podjetju.html")="O PODJETJU"
+        
+    .centered-wrapper 
+      .page-header(style='margin-bottom: 120px')
+        .about-us
+          h1="Nadstreški"
+          p='Šotori so izdelani iz odporne konstrukcij  iz aluminijastih profilov in vroče cinkanih jeklenih veznih členov. Stranska pokrivala so prilagodljivih dimenzij in se lahko spremenijo glede na namembnost uporabe. '
+          p='Strešna in stranska kritina je lahko izvedena iz PVC negorljivega platna, trapezne pločevine ali ISO izolacijskih panelov, po želji naročnika se lahko vgradijo industrijska in osebna vrata različnih dimenzij in izvedb. Šotori so primerni  za proizvodne, prodajne, skladiščne, sejemske, kombinirane proizvodno - poslovne objekte ter tudi za rekreativno-vadbene namene. Gradbeno dovoljenje ni potrebno.'
+          a(href='#' style='font-weight: 600;')='pošlji povpraševanje →'
+      .product-gallery
+        h1(style='margin-bottom: 48px')="Primer kmetijskega šotora"
+    .massive-image(style="background:url('./media/four-r.png')")            
+
+
+    include footer.pug

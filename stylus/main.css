@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #0d0c0c;
-  color: #fff;
+  background: #fff;
+  color: #474f59;
   font-size: 16px;
   font-family: Roboto, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,7 +10,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: #474f59;
   transition: all 0.3s;
   opacity: 1;
   font-size: 14px;
@@ -18,12 +18,12 @@ a {
 a:hover {
   opacity: 0.8;
   cursor: pointer;
-  transform: translateX(-2px);
 }
 h1 {
   font-size: 56px;
   font-weight: 600;
   margin: 0px;
+  width: auto;
 }
 h2 {
   font-size: 40px;
@@ -43,20 +43,26 @@ li {
 }
 .active {
   opacity: 1 !important;
-  color: #fff;
+  color: #676b72;
 }
 .navigation {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 32px 48px;
   align-items: center;
   height: 56px;
+  z-index: 99 !important;
 }
 .logo {
   height: 32px;
 }
 section {
   min-height: 100vh;
+}
+.menu {
+  position: relative;
+  display: flex;
 }
 .menu a {
   font-size: 14px;
@@ -76,9 +82,9 @@ section {
 .hero-text {
   margin-top: 160px;
   max-width: 200px;
-  border-left: 1px solid #444;
-  border-bottom: 1px solid #444;
-  border-top: 1px solid #444;
+  border-left: 1px solid #d3dbe4;
+  border-bottom: 1px solid #d3dbe4;
+  border-top: 1px solid #d3dbe4;
   padding: 32px;
   max-height: 280px;
 }
@@ -110,17 +116,12 @@ section {
   content: '';
   height: 100%;
   width: 100%;
-  background: url("../media/metal-bg.png");
-  background-size: cover;
-  background-repeat: none;
-  opacity: 0.4;
-  transform: rotate(180deg);
+  background: #676b72;
 }
 .control-wrapper {
   display: flex;
   height: 320px;
   width: 900px;
-  background: rgba(0,0,0,0.5);
   z-index: 2;
   align-items: center;
   padding: 32px;
@@ -225,7 +226,7 @@ li {
   width: 384px;
   border-style: solid;
   border-width: 1px 1px 1px 0px;
-  border-color: #444;
+  border-color: #d3dbe4;
   z-index: -1;
 }
 .homepage-three {
@@ -255,7 +256,7 @@ li {
   margin-top: 40px;
   height: 160px;
   width: 800px;
-  border: 1px solid #444;
+  border: 1px solid #d3dbe4;
   z-index: -1;
 }
 .homepage-four {
@@ -294,7 +295,7 @@ li {
   margin-top: 40px;
   height: 320px;
   width: 248px;
-  border: 1px solid #444;
+  border: 1px solid #d3dbe4;
   z-index: -1;
 }
 .homepage-five {
@@ -307,16 +308,7 @@ li {
   margin: 0 auto;
 }
 .clients-wrapper .title {
-  margin-bottom: 128px;
-}
-.clients-wrapper .title:after {
-  content: '';
-  position: absolute;
-  width: 240px;
-  height: 1px;
-  background: #444;
-  margin-top: -16px;
-  margin-left: 16px;
+  margin-bottom: 64px;
 }
 .client-grid {
   display: flex;
@@ -330,7 +322,7 @@ li {
 .client-grid .client {
   width: 240px;
   height: 160px;
-  border: 1px solid #111;
+  border: 1px solid #d3dbe4;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -341,9 +333,10 @@ li {
   transform: scale(0.4);
   opacity: 0.4;
   transition: all 0.8s;
+  -webkit-filter: invert(100%);
 }
 .client-grid .client:hover {
-  border: 1px solid #666;
+  border: 1px solid #676b72;
 }
 .client-grid .client:hover img {
   opacity: 1;
@@ -352,7 +345,7 @@ li {
 .footer {
   height: 300px;
   display: flex;
-  background: #111;
+  background: #474f59;
 }
 .footer .copyright {
   width: 64px;
@@ -364,7 +357,7 @@ li {
   transform: rotate(-90deg);
   position: absolute;
   font-size: 13px;
-  color: #888;
+  color: #fff;
   margin-top: 88px;
 }
 .footer .address {
@@ -376,7 +369,7 @@ li {
   margin-bottom: 24px;
 }
 .footer .address p {
-  color: #a6a6a6;
+  color: #fff;
   font-size: 13px;
   line-height: 20px;
   margin: 0px;
@@ -392,7 +385,7 @@ li {
 }
 .footer .footer-nav .nav a {
   margin-right: 32px;
-  color: #888;
+  color: #fff;
   transition: all 0.3s;
 }
 .footer .footer-nav .nav a:hover {
@@ -464,8 +457,8 @@ li {
   background-repeat: none;
 }
 .about-us {
-  margin-top: 40px;
-  max-width: 800px;
+  max-width: 64%;
+  margin-right: 5vw;
 }
 .about-us p {
   line-height: 24px;
@@ -504,9 +497,6 @@ li {
   padding: 0px;
   color: #666;
 }
-.contact {
-  margin-top: 200px;
-}
 .message-form {
   margin-right: 88px;
 }
@@ -527,15 +517,15 @@ input[type=email] {
   height: 32px;
   background: transparent;
   border-width: 0px 0px 1px 0px;
-  border-color: #666;
-  color: #fff;
+  border-color: #676b72;
+  color: #474f59;
   font-size: 14px;
   padding-left: 8px;
   outline: none;
 }
 input[type=text]:focus,
 input[type=email]:focus {
-  border-color: #fff;
+  border-color: #d3dbe4;
 }
 textarea {
   background: transparent;
@@ -546,7 +536,7 @@ textarea {
   outline: none;
 }
 textarea:focus {
-  border-color: #fff;
+  border-color: #d3dbe4;
 }
 #form {
   margin-top: 40px;
@@ -570,11 +560,11 @@ textarea:focus {
   border-radius: 0px;
   font-size: 14px;
   color: #fff;
-  background: #444;
+  background: #676b72;
   transition: all 0.3s;
 }
 #submit-btn:hover {
-  background: #222;
+  background: #7b7f86;
   cursor: pointer;
 }
 .empty-state {
@@ -593,4 +583,76 @@ textarea:focus {
 .empty-state l a,
 .empty-state .empty-wrapper a {
   font-size: 16px;
+}
+.dropdown {
+  display: none !important;
+  z-index: 99 !important;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.06), 0px 4px 8px 0px rgba(0,0,0,0.06);
+  padding: 8px 16px;
+  flex-direction: column;
+}
+.dropdown .dropdown-list {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+}
+.dropdown a {
+  z-index: 999 !important;
+  letter-spacing: 0px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+.dropdown-wrapper {
+  position: relative;
+}
+.dropdown-wrapper:hover .dropdown {
+  display: block !important;
+  opacity: 1;
+}
+.gallery-grid .row {
+  display: flex;
+  margin-bottom: 56px;
+}
+.gallery-grid .img-text {
+  width: 50%;
+}
+.gallery-grid .img-text .img {
+  height: 280px;
+  background-size: cover !important;
+}
+.gallery-grid .img-text .img:first-child {
+  margin-right: 24px;
+}
+.gallery-grid .img-text p {
+  font-size: 12px;
+}
+.about-rarec {
+  display: flex;
+  align-items: flex-start;
+}
+.about-rarec .about-us a {
+  font-weight: bold;
+}
+.about-rarec .about-us p {
+  margin-bottom: 16px;
+}
+.about-rarec .about-us p:last-child {
+  font-weight: bold;
+}
+.rarec-licence {
+  margin-top: 64px;
+}
+.licence {
+  width: 300px;
+  height: 380px;
+  background: url("../media/licence.png");
+  background-size: cover;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.04), 0px 16px 32px 0px rgba(0,0,0,0.04);
+}
+.massive-image {
+  width: 100%;
+  height: 640px;
+  background-size: cover !important;
 }

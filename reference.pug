@@ -1,0 +1,60 @@
+html
+  include head.pug 
+  body
+    .navigation
+      .logo-wrapper
+        a(href="./index.html")
+          img( class="logo" src="media/logo.svg", alt="Rarec Inc")
+      .menu
+        a(href="./index.html")="DOMOV"
+        .dropdown-wrapper
+          a(href="#")="PRODUKTI"
+            .dropdown
+              .dropdown-list
+                a(href="./industrijski-sotori.html")="Industrijski sotori"
+                a(href="./kmetijski-šotori.html")="Kmetijski sotori"
+                a(href="./nadstreški.html")="Nadsteski"
+                a(href="./konstrukcije-po-meri.html")="Konstrukcije po meri"
+        a(href="./contact.html" class="active")="KONTAKT"
+        a(href="./reference.html")="REFERENCE"
+        a(href="./o-podjetju.html")="O PODJETJU"
+      
+      
+    section.homepage-five
+      .clients-wrapper
+        .title
+          h1="Sodelovali smo"
+        .client-grid
+          .col
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/dinos.png", alt="dinos")
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/droga.png", alt="droga")
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/zito.png", alt="zito")
+          .col
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/mercator.png", alt="mercator")
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/banka.png", alt="BankaKoper")
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/trimo.png", alt="trimo")
+          .col  
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/dars.png", alt="dars")
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/elaphe.png", alt="elaphe")
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/btcity.png", alt="btcity")
+          .col  
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/electrolux.png", alt="electrolux")
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/helois.png", alt="helios")
+            .client
+              img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1651179/dbschen.png", alt="schenker")
+
+
+    include footer.pug
+            
+ 

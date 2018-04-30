@@ -18,20 +18,19 @@ html
           img( class="logo" src="media/logo.svg", alt="Rarec Inc")
       .menu
         a(href="./index.html")="DOMOV"
-        a(href="./products.html")="PRODUKTI"
+        .dropdown-wrapper
+          a(href="#")="PRODUKTI"
+            .dropdown
+              .dropdown-list
+                a(href="./industrijski-sotori.html")="Industrijski sotori"
+                a(href="./kmetijski-šotori.html")="Kmetijski sotori"
+                a(href="./nadstreški.html")="Nadsteski"
+                a(href="./konstrukcije-po-meri.html")="Konstrukcije po meri"
         a(href="./contact.html" class="active")="KONTAKT"
+        a(href="./reference.html")="REFERENCE"
+        a(href="./o-podjetju.html")="O PODJETJU"
 
     .centered-wrapper 
-     
-      .page-header
-        h1="O nas"
-        
-      .about-us
-        p="Podjetje RAREC IN d.o.o. je podjetje, ki se vse bolj uveljavlja na trgu enostavnih montažnihobjektov, izdelanih po evropskih smernicah in standardu SIST EN 13782:2015. V naši ekipi imamo izkušene certificirane varilce, kovinske konstrukcije pa so proizvedene po postopkih SIST EN 1090-1 in SIST EN 1090-2. Naši inženirji in projektanti pa vam pomagajo pri uresničitvi vaših izven standardnih želja. Smo fleksibilna in učinkovita ekipa."
-        p="Sledimo novostim in uporabljamo vgradne materiale, ki imajo poreklo v Sloveniji in njihova kakovost zadovoljuje vsem standardom. Pred časom smo pridobili nove proizvodne prostore v Poslovni coni Komenda in tako uresničujemo našo vizijo; biti sodobni, uspešni in cenovno ugodni dolgoročni poslovni partnerji."
-        
-      .photo-bg
-       
       section.contact#focus
         .page-header
            h1="Pišite nam"
@@ -43,24 +42,21 @@ html
               .row
                 .column
                   .email.form-element
-                    label(for="inputEmail")="email"
+                    label(for="inputEmail")="Vaš elektronski naslov"
                     input#inputEmail(type="email" name="email")
-                  .name.form-element
-                    label(for="inputName")="Tvoje ime"
-                    input#inputName(type="text" name="name")
 
                 .column
-                  .address.form-element
-                    label(for="inputAddress")="Vaš naslov"
-                    input#inputAddress(type="text" name="address")
                   .comp.form-element
-                    label(for="inputCompany")="Tvoje podjetje"
+                    label(for="inputCompany")="Ime podjetja"
                     input#inputCompany(type="text" name="company")
+                  .name.form-element
+                    label(for="inputName")="Ime in priimek"
+                    input#inputName(type="text" name="name")
 
-              label(for="inputMessage")="Sporočilo"
+              label(for="inputMessage")="Vaše sporočilo"
               textarea#inputMessage(rows='8' name="message")
 
-              input#submit-btn(type="submit")
+              button#submit-btn(type="submit")='Pošlji'
               
           .contact-address
             h3="Kontaktni podatki"
@@ -79,27 +75,7 @@ html
 
 
 
-    .footer
-      .copyright
-        p="© 2018 Rarec Inc"
-      .address
-        .location
-          p="RAREC IN d.o.o. PC Žeje pri Komendi"
-          p="Pod bori 2"
-          p="1218 Komenda"
-        .number
-          p="Telefon: +386 1 51 50 250"
-          p="Fax: +386 1 51 50 251"
-        .email
-          p="E-mail:  info@rarec.si"
-        .gsm  
-          p="GSM : 051 631 093"
-      .footer-nav
-        .nav
-          .nav
-            a(href="./index.html")="DOMOV"
-            a(href="./products.html")="PRODUKTI"
-            a(href="./contact.html" class="active")="KONTAKT"
+    include footer.pug
             
 
         

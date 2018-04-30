@@ -12,39 +12,29 @@ html
     script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
     script(src="./js/main.js") 
   body
-    .navigation 
+    .navigation
       .logo-wrapper
         a(href="./index.html")
           img( class="logo" src="media/logo.svg", alt="Rarec Inc")
       .menu
         a(href="./index.html")="DOMOV"
-        a(href="./products.html")="PRODUKTI"
-        a(href="./contact.html")="KONTAKT"
+        .dropdown-wrapper
+          a(href="#")="PRODUKTI"
+            .dropdown
+              .dropdown-list
+                a(href="./industrijski-sotori.html")="Industrijski sotori"
+                a(href="./kmetijski-šotori.html")="Kmetijski sotori"
+                a(href="./nadstreški.html")="Nadsteski"
+                a(href="./konstrukcije-po-meri.html")="Konstrukcije po meri"
+        a(href="./contact.html" class="active")="KONTAKT"
+        a(href="./reference.html")="REFERENCE"
+        a(href="./o-podjetju.html")="O PODJETJU"
         
     .empty-state
       .empty-wrapper
         h2="Page not found :(" 
         a( style="text-decoration:underline;" href="./index.html")="Click here to go to home page"   
 
-    .footer
-      .copyright
-        p="© 2018 Rarec Inc"
-      .address
-        .location
-          p="RAREC IN d.o.o. PC Žeje pri Komendi"
-          p="Pod bori 2"
-          p="1218 Komenda"
-        .number
-          p="Telefon : +386 1 51 50 250"
-          p="Fax:        +386 1 51 50 251"
-        .email
-          p="E-mail:  info@rarec.si"
-        .gsm  
-          p="GSM : 051 631 093"
-      .footer-nav
-        .nav
-          a(href="./index.html" class="active")="DOMOV"
-          a(href="./products.html")="PRODUKTI"
-          a(href="./contact.html")="KONTAKT"
+    include footer.pug
             
  
