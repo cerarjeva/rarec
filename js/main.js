@@ -21,15 +21,12 @@ $(document).ready(function() {
 
   sr.reveal('.photo-bg',{duration: 700 });
   sr.reveal('.rarec-licence',{duration: 700 });
-  sr.reveal('.about-us',{duration: 900 });
   sr.reveal('.flex',{duration: 700 });
   sr.reveal('.form-element',{duration: 700 },50);
   sr.reveal('.contact-address',{duration: 900 });
 
 //////////////
 
-  sr.reveal('.page-header',{duration:900 });
-  sr.reveal('.centered-wrapper',{duration: 1300 });
   sr.reveal('.product-content',{duration: 900 });
   sr.reveal('.massive-image',{duration: 900 });
 
