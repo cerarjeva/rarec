@@ -1,5 +1,17 @@
 html
-  include head.pug 
+  head
+    title="Reference"
+
+    link(rel="stylesheet" href="./stylus/main.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700")
+      
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+      
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js')
+    script(src="./js/main.js") 
+    meta(name="description" content="Ponosni smo na vsak projekt, ki so nam ga zaupali cenjeni naročniki. Preverite samo nekaj naših partnerjev s katerimi smo sodelovali. Za več informacij stopite z nami v stik.")
   body
     .navigation
       .logo-wrapper
@@ -11,9 +23,9 @@ html
           a(href="#")="PRODUKTI"
             .dropdown
               .dropdown-list
-                a(href="./industrijski-sotori.html")="Industrijski sotori"
-                a(href="./kmetijski-šotori.html")="Kmetijski sotori"
-                a(href="./nadstreški.html")="Nadsteski"
+                a(href="./industrijski-sotori.html")="Industrijski šotori"
+                a(href="./kmetijski-šotori.html")="Kmetijski šotori"
+                a(href="./nadstreški.html")="Nadstreški"
                 a(href="./konstrukcije-po-meri.html")="Konstrukcije po meri"
         a(href="./contact.html")="KONTAKT"
         a(href="./reference.html" class="active")="REFERENCE"

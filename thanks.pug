@@ -1,6 +1,6 @@
 html
   head
-    title="Domov"
+    title="Thanks"
     
     link(rel="stylesheet" href="./stylus/main.css")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
@@ -22,11 +22,11 @@ html
           a(href="# ")="PRODUKTI"
             .dropdown
               .dropdown-list
-                a(href="./industrijski-sotori.html")="Industrijski sotori"
-                a(href="./kmetijski-šotori.html")="Kmetijski sotori"
-                a(href="./nadstreški.html")="Nadsteski"
+                a(href="./industrijski-sotori.html")="Industrijski šotori"
+                a(href="./kmetijski-šotori.html")="Kmetijski šotori"
+                a(href="./nadstreški.html")="Nadstreški"
                 a(href="./konstrukcije-po-meri.html")="Konstrukcije po meri"
-        a(href="./contact.html" class="active")="KONTAKT"
+        a(href="./contact.html")="KONTAKT"
         a(href="./reference.html")="REFERENCE"
         a(href="./o-podjetju.html")="O PODJETJU" 
         
@@ -34,8 +34,12 @@ html
       .empty-wrapper
         h2="Thank you for the message" 
         p="We will reach you back shortly"
-        a( style="text-decoration:underline;" href="./index.html")="Click here to go to home page"   
-
+        a( style="text-decoration:underline;" href="./index.html")="Click here to go to home page"  
+         
+    <!-- Event snippet for Leads conversion page -->
+    script.
+      gtag('event', 'conversion', {'send_to': 'AW-830026478/br2sCMOkhHsQ7uXkiwM'});
+      
     include footer.pug
             
  
