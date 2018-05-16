@@ -530,7 +530,7 @@ input[type=email]:focus {
 textarea {
   background: transparent;
   border: 1px solid #666;
-  color: #fff;
+  color: #474f59;
   font-size: 14px;
   padding: 16px;
   outline: none;

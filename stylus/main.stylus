@@ -617,7 +617,7 @@ input[type=email]
 textarea
   background: transparent
   border 1px solid #666
-  color: white
+  color: $darkBlue
   font-size: 14px
   padding: 16px
   outline: none
